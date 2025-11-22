@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdeali Ranapurwala — Cybersecurity Student & Developer</title>
+  <meta name="description" content="Portfolio of Abdeali Ranapurwala — BTech (Cybersecurity) student, projects, certifications, and achievements." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1724;
+      --muted:#94a3b8;
+      --accent:#00d1ff;
+      --accent-2:#7c3aed;
+      --glass: rgba(255,255,255,0.03);
+      --radius:16px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#020617 0%, #071028 60%);color:#e6eef8}
+    a{color:var(--accent)}
+
+    /* Layout */
+    .container{max-width:1100px;margin:48px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:220px;height:220px;border-radius:20px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-weight:800;color:#021026;font-size:40px;box-shadow:0 8px 30px rgba(0,0,0,0.6);overflow:hidden}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600}
+    nav a:hover{background:var(--glass);color:var(--accent)}
+
+    main{margin-top:28px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:22px;box-shadow:0 6px 30px rgba(2,6,23,0.8);border:1px solid rgba(255,255,255,0.03)}
+
+    .intro h1{margin:0;font-size:30px;letter-spacing:-0.5px}
+    .intro p{color:var(--muted);margin-top:10px;line-height:1.5}
+    .cta{margin-top:18px;display:flex;gap:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:10px;color:#021026;font-weight:700;text-decoration:none}
+    .outline{border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--accent);background:transparent}
+
+    .profile-stats{display:flex;flex-direction:column;gap:12px}
+    .stat{display:flex;justify-content:space-between;align-items:center}
+    .stat .k{font-weight:800;font-size:20px}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:700}
+
+    /* Sections */
+    section{margin-top:22px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:8px 10px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+    .projects .proj{display:flex;flex-direction:column;gap:8px;padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.03)}
+
+    footer{margin-top:40px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:960px){.hero{grid-template-columns:1fr;}.grid-3{grid-template-columns:1fr 1fr}.container{padding:16px}}
+    @media (max-width:600px){.grid-3{grid-template-columns:1fr}.avatar{width:64px;height:64px;font-size:20px}}
+
+    /* small animated code background */
+    .code-bg{position:fixed;right:-200px;top:120px;opacity:0.06;transform:rotate(-20deg);font-family:monospace;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="code-bg">&lt; / &gt; &nbsp; &lt;script&gt; &nbsp; console.log('hello') &nbsp; &lt;/script&gt;</div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" style="overflow:hidden;"><img src="your-image.jpg" alt="Your Photo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"/></div>
+        <div>
+          <div style="font-weight:800">Abdeali Ranapurwala</div>
+          <div style="font-size:12px;color:var(--muted)">BTech (Cybersecurity) • Student • Web & Security Enthusiast</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="card intro">
+          <h1>Hi — I'm Abdeali. I build, learn, and secure systems.</h1>
+          <p>17-year-old BTech (Cybersecurity) student with hands-on coursework and projects in database security, network analysis (Wireshark), firewall configuration, and blockchain basics. Comfortable with web dev, SQL, Linux, and creating short educational videos.</p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="outline" href="#contact">Get in touch</a>
+          </div>
+
+          <section id="about" style="margin-top:18px">
+            <h3 style="margin-bottom:8px">Academics & Journey</h3>
+            <div style="color:var(--muted);line-height:1.5">
+              <strong>Education:</strong> Completed 12th standard — currently pursuing <strong>BTech in Cybersecurity</strong>.<br>
+              <strong>Study focus:</strong> Network security, database security, system administration (Windows & Linux), and blockchain fundamentals.
+            </div>
+
+            <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+              <span class="chip">Available for internships</span>
+              <span class="chip">Public speaking confident</span>
+              <span class="chip">YouTube Shorts creator</span>
+            </div>
+          </section>
+
+          <section id="projects" style="margin-top:14px">
+            <h3 style="margin-bottom:10px">Representative Projects</h3>
+            <div class="projects">
+              <div class="proj">
+                <div style="display:flex;justify-content:space-between"><strong>Coursera Cybersecurity Capstone</strong><span class="stat">Network diagram • Wireshark captures</span></div>
+                <div style="color:var(--muted);font-size:13px">Designed subnet layout, captured HTTP/HTTPS traffic with Wireshark, configured firewall rules, and researched CVEs.</div>
+              </div>
+
+              <div class="proj" style="margin-top:8px">
+                <div style="display:flex;justify-content:space-between"><strong>Blockchain Basics Final Project</strong><span class="stat">Private Ethereum VM</span></div>
+                <div style="color:var(--muted);font-size:13px">Set up a private Ethereum network and performed transactions on a VM — hands-on blockchain experience.</div>
+              </div>
+
+              <div class="proj" style="margin-top:8px">
+                <div style="display:flex;justify-content:space-between"><strong>Database Security Assignments</strong><span class="stat">SQL • Encryption • Access Control</span></div>
+                <div style="color:var(--muted);font-size:13px">Implemented secure SQL queries, encryption at rest, and role-based access control as part of coursework.</div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="card profile-stats">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+              <div>
+                <div style="font-size:13px;color:var(--muted)">Location</div>
+                <div style="font-weight:800">India</div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-size:13px;color:var(--muted)">Availability</div>
+                <div style="font-weight:800">4–5 hours/day</div>
+              </div>
+            </div>
+
+            <hr style="border:0;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
+
+            <div class="stat"><div style="color:var(--muted)">Certifications</div><div class="k">IBM • Google • Coursera</div></div>
+            <div class="stat"><div style="color:var(--muted)">Languages</div><div class="k">English (practicing American accent)</div></div>
+            <div class="stat" style="margin-top:8px"><div style="color:var(--muted)">Hobbies</div><div class="k">YouTube Shorts • Public speaking • Web dev</div></div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:10px;flex-direction:column">
+            <a class="btn" href="#certs">My Certificates</a>
+            <a class="outline" href="#contact">Download Resume</a>
+          </div>
+
+        </aside>
+      </div>
+
+      <section id="certs" class="card" style="margin-top:18px">
+        <h3>Certifications & Courses</h3>
+        <div style="color:var(--muted);margin-top:6px">Completed and ongoing certifications that back my practical skills:</div>
+        <ul style="margin-top:10px;color:var(--muted);line-height:1.7">
+          <li>IBM — (2 courses completed) — foundational cybersecurity / cloud basics</li>
+          <li>Google — (2 courses completed) — database / security related coursework</li>
+          <li>Coursera — Cybersecurity Specialization (assignments + capstone)</li>
+          <li>Blockchain Basics (final project in progress / finishing soon)</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="card" style="margin-top:18px">
+        <h3>Skills</h3>
+        <div style="margin-top:10px" class="skills">
+          <span class="skill">Network Analysis (Wireshark)</span>
+          <span class="skill">Firewall Rules (Windows Defender)</span>
+          <span class="skill">SQL & Database Security</span>
+          <span class="skill">Linux (Shell, admin)</span>
+          <span class="skill">Blockchain (private Ethereum)</span>
+          <span class="skill">Web Development (HTML/CSS/JS)</span>
+          <span class="skill">Basic Python</span>
+          <span class="skill">Public Speaking</span>
+          <span class="skill">Content Creation (YouTube Shorts)</span>
+        </div>
+      </section>
+
+      <section id="more" class="card" style="margin-top:18px">
+        <h3>Achievements & Notes</h3>
+        <ul style="color:var(--muted);line-height:1.7">
+          <li>Successfully completed multiple Coursera assignments involving network captures, subnet design and security reporting.</li>
+          <li>Built a private Ethereum VM and executed transactions as part of a blockchain project.</li>
+          <li>Created short-form educational content (YouTube Shorts) to explain technical topics simply.</li>
+          <li>Comfortable presenting technical work and have public speaking confidence.</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card" style="margin-top:18px">
+        <h3>Contact</h3>
+        <p style="color:var(--muted)">Want to collaborate or offer an internship? Drop a message.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Thanks — this form is a demo. Add your email handling.');" style="display:grid;gap:10px;margin-top:8px">
+          <input required placeholder="Your name" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <input required type="email" placeholder="Your email" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <textarea required placeholder="Message" rows="4" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+          <div style="display:flex;gap:10px">
+            <button class="btn" type="submit">Send message</button>
+            <button class="outline" type="button" onclick="downloadResume()">Download Resume</button>
+          </div>
+        </form>
+
+        <script>
+          function downloadResume(){
+            alert('Demo resume button. Replace with link to your resume.pdf in the project folder.');
+          }
+        </script>
+      </section>
+
+      <footer>
+        <div style="font-size:13px;color:var(--muted)">© " + new Date().getFullYear() + " Abdeali Ranapurwala — Built with curiosity</div>
+        <div style="font-size:13px;color:var(--muted)">Made for internships • projects • contact</div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        document.getElementById(id).scrollIntoView({behavior:'smooth'});
+      })
+    });
+  </script>
+</body>
+</html>
